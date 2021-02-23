@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:3.9.2-slim
 COPY requirements.txt app.py /
 RUN pip install -r requirements.txt
 
