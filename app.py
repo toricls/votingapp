@@ -1,10 +1,13 @@
 import os
 
 from flask import Flask
+from flask_cors import CORS, cross_origin
 import simplejson as json
 import boto3
 
 app = Flask(__name__)
+
+cors = CORS(app, resources={r"/api/*": {"Access-Control-Allow-Origin": "*"}})
 
 ddb = boto3.resource('dynamodb', region_name="us-west-2")
 ddbtable = ddb.Table('restaurants')
