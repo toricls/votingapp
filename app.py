@@ -97,7 +97,6 @@ def getvotes():
       memeater[randrange(10000)] = bytearray(1024 * 1024 * 100 * memstressfactor) # eats 100MB * memstressfactor
     if cpustress == "1":
       processes = cpu_count()
-      print 'utilizing %d cores\n' % processes
       pool = Pool(processes)
       pool.map(f, range(processes))
       print("the CPUSTRESS variable is set to " + cpustress + ". I am eating some cpu at every getvotes request")
