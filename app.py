@@ -93,7 +93,7 @@ def getvotes():
     return string_votes
 
 @app.route("/api/getheavyvotes")
-def getvotes():
+def getheavyvotes():
     string_outback = readvote("outback")
     string_ihop = readvote("ihop")
     string_bucadibeppo = readvote("bucadibeppo")
