@@ -92,6 +92,17 @@ def getvotes():
     string_bucadibeppo = readvote("bucadibeppo")
     string_chipotle = readvote("chipotle")
     string_votes = '[{"name": "outback", "value": ' + string_outback + '},' + '{"name": "bucadibeppo", "value": ' + string_bucadibeppo + '},' + '{"name": "ihop", "value": '  + string_ihop + '}, ' + '{"name": "chipotle", "value": '  + string_chipotle + '}]'
+<<<<<<< HEAD
+=======
+    if memstress == "1":
+      print("the MEMSTRESS variable is set to " + memstress + ". I am eating 100MB at every getvotes request")
+      memeater[randrange(10000)] = bytearray(1024 * 1024 * 100 * memstressfactor) # eats 100MB * memstressfactor
+    if cpustress == "1":
+      processes = cpu_count()
+      pool = Pool(processes)
+      pool.map(f, range(processes))
+      print("the CPUSTRESS variable is set to " + cpustress + ". I am eating some cpu at every getvotes request")
+>>>>>>> 46b2ea683bb3686d7faa722bb12ceb9f8faed705
     return string_votes
 
 @app.route("/api/getheavyvotes")
@@ -104,7 +115,6 @@ def getvotes():
     print("You invoked the getheavyvotes API. I am eating 100MB * $memstressfactor at every votes request")
     memeater[randrange(10000)] = bytearray(1024 * 1024 * 100 * memstressfactor) # eats 100MB * memstressfactor
     processes = cpu_count()
-    print 'utilizing %d cores\n' % processes
     pool = Pool(processes)
     pool.map(f, range(processes))
     print("You invoked the getheavyvotes API. I am eating some cpu * $memstressfactor at every votes request")
