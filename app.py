@@ -20,8 +20,8 @@ ddb_table_name = os.getenv('DDB_TABLE_NAME', "votingapp-restaurants")
 ddb = boto3.resource('dynamodb', region_name=ddb_aws_region)
 ddbtable = ddb.Table(ddb_table_name)
 
-print("The cpustress variable is set to: " + str(cpustress))
-print("The memstress variable is set to: " + str(memstress))
+print("The cpustressfactor variable is set to: " + str(cpustressfactor))
+print("The memstressfactor variable is set to: " + str(memstressfactor))
 memeater=[]
 memeater = [0 for i in range(10000)] 
 
