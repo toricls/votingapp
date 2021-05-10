@@ -11,7 +11,7 @@ In addition to vote, you can query the status by CURLing (or similar) the `/api/
 
 ### How to set up the application
 
-This is a classic Python application. To use it with Amazon App Runner you can build the image upfront (a `Dockerfile` is provided) or you can provide the source code directly. The only requirements creating the DDB table and set the proper permissions. In the [preparation](/preparation) folder there are instructions and code to make this happen. 
+This is a classic Python application. To use it with AWS App Runner you can build the image upfront (a `Dockerfile` is provided) or you can provide the source code directly. The only requirements creating the DDB table and set the proper permissions. In the [preparation](/preparation) folder there are instructions and code to make this happen. 
 
 #### Variables
 
