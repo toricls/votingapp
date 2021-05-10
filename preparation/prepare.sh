@@ -2,7 +2,6 @@
 
 export TABLE_NAME="votingapp-restaurants"
 export IAM_ROLE="votingapp-role"
-
 export ACCOUNT_ID=$(aws sts get-caller-identity | jq -r .Account) 
 if [ -z ${AWS_REGION} ]; then echo "you need to export the AWS_REGION variable"; exit; fi
 

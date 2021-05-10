@@ -12,8 +12,6 @@ app = Flask(__name__)
 
 cors = CORS(app, resources={r"/api/*": {"Access-Control-Allow-Origin": "*"}})
 
-cpustress = os.getenv('CPUSTRESS', 0)
-memstress = os.getenv('MEMSTRESS', 0)
 cpustressfactor = os.getenv('CPUSTRESSFACTOR', 1)
 memstressfactor = os.getenv('MEMSTRESSFACTOR', 1)
 ddb_aws_region = os.getenv('DDB_AWS_REGION')
