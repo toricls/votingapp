@@ -1,6 +1,6 @@
 ### Votingapp
 
-This is a simple API service built for various tests purposes. This was built to test AWS App Runner specifically but it can be used for other purposes. 
+This is a simple API service built for various tests purposes. This was built to test AWS App Runner specifically but it can be used for other purposes. This application is a scaled down version of (and it's been inspired by) [Yelb](https://github.com/mreferre/yelb/).
 
 The application puts and stores "votes" in a Amazon DynamoDB table. You can vote by just CURLing (or similar) to 4 APIs: 
 ```
