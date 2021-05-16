@@ -45,10 +45,11 @@ This app has been created to test deployments to AWS App Runner. However this is
 #### Licensing
 
 This application is made available under the [MIT license](./LICENSE). The Python prerequisite required to run this application and their licensing are as follows:
-`Flask`: `BSD License` 
-`Flask-Cors`: `MIT License`
-`boto3`: `Apache License 2.0`
-`botocore`: `Apache License 2.0`
-`simplejson`: `Academic Free License (AFL), MIT License (MIT License)`
-
+```
+Flask: BSD License 
+Flask-Cors: `MIT License
+Boto3: `Apache License 2.0
+Botocore: `Apache License 2.0
+Simplejson: `Academic Free License (AFL), MIT License (MIT License)
+```
 
