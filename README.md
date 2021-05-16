@@ -19,7 +19,7 @@ This is a classic Python application. To use it with AWS App Runner you can buil
 
 #### AWS App Runner console deployment
 
-First, please run the `preparation.sh` script in this repository to create the DynamoDB table and the various roles and policies required. Then move to the AWS App Runner console.
+First, please run the `preparation.sh` script in this repository to create the DynamoDB table and the various roles and policies required. Also, clone this repo in your GH account. Then move to the AWS App Runner console.
 
 - Click on `Create Service` 
 - Repository type: `Source code repository`
